@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="keywords" content="code together" />
+  <meta name="theme-color" content="#434A97" />
+  <title>HTML</title>
+  <link rel="stylesheet" href="style2.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="meeting">
+    <h1>Code Together</h1>
+    <p>Lets make something amazing together</p>
+    <input type="text" name="" id="meeting_name" value="" placeholder="meeting name..." />
+    <button id="joining" disabled onclick="socket.send(JSON.stringify({join : document.getElementById('meeting_name').value }));document.getElementById('meeting_code').innerText = document.getElementById('meeting_name').value;document.getElementById('meeting').remove(); " class="press light round">Join</button>
+    <p>make code meetings, teach your html students and edit together live for a excellent web app</p>
+    
+    <br /><br /><hr />
+    <span style="font-size: 11px">Satyam Bharti @ 2021 satyambhartijnv0@gmail.com</span>
+  </div>
+  
+  
+  <div style="display: grid; height: 40px;background: white">
+    <input style="grid-column-start: 1;grid-column-end: 4" type="text" name="" id="" value="" placeholder="your name" />
+    <button onclick="myname()" class="press dark" style="grid-column-start: 4">Okay</button>
+  </div>
+  
+  
+  
+  <div id="details">
+    <h2>details</h2>
+    meeting code :  <span id="meeting_code">abc-xyzo-mnp</span><br />
+    admin : <span id="admin">admin</span>
+  </div>
+  
+  <div style="display: grid; margin: 10px 40px">
+    <button style="font-size: 25px;background: red;color: white; border: 2px solid red" class="press noCorner light" onclick="location.reload()">Leave</button>
+  </div>
+  
+  <div align="center" id="taskbar">
+    <div onclick="show('#code')"><i class="material-icons-outlined icon">code</i></div>
+    
+    <div onclick="show('#preview')"><i class="material-icons-outlined icon">preview</i></div>
+    
+    <div onclick="hide()"><i class="material-icons-outlined icon">home</i></div>
+    
+    <div onclick="updateCode()"><i class="material-icons-outlined icon">send</i></div>
+    
+    <div onclick="show('#clients')" id="members"><i class="material-icons-outlined icon">people</i></div>
+  </div>
+  
+  <div class="win" id="clients"></div>
+  <div class="win" id="code">
+    <textarea placeholder="your code goes here..." v-model="doc" name="code" id="code"></textarea>
+  </div>
+  <div class="win" id="preview">
+    <iframe id="frames" frameborder="1"></iframe>
+  </div>
+  
+  <script src="vue@2.6.12.js" type="text/javascript" charset="utf-8"></script>
+  <script src="main.js"></script>
+</body>
+</html>

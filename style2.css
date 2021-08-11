@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  outline: none;
+  font-family: sans-serif;
+}
+#meeting {
+  top: 0px;
+  left : 0px;
+  position: fixed;
+  width: 100%;
+  background: linear-gradient(280deg,#1D235D 70%,#434A97 30%);
+  height : 600px;
+  z-index: 100;
+  color: white;
+  padding: 20px;
+  overflow-x: hidden;
+}
+body {
+  font-size: 15pt;
+  margin: 0px;
+  background: #161942;
+}
+i {
+  color: white;
+}
+#taskbar {
+  text-align: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0px;
+  display: flex;
+  width: 100%;
+  background: #00000085;
+  padding: 5px;
+  padding-bottom: 0px;
+  z-index: 60;
+}
+#taskbar>div,#taskbar>img{
+  width: 50px;
+  height: 50px;
+  margin: 1px;
+  background: #585858;
+  display: inline-block;
+  border-radius: 50%;
+  padding-top: 5px;
+  vertical-align: middle;
+}
+
+.win {
+  position: fixed;
+  top: 110%;
+  width: 20px;
+  height: 20px;
+  background: #434A97;
+  transition: all 500ms;
+  overflow: hidden;
+  /* backdrop-filter: blur(2px); */
+}
+
+.member {
+  padding: 10px;
+  background: #1D235D;
+  margin: 2px;
+  color: white;
+  border-radius: 5px;
+}
+#clients {
+  padding: 10px;
+}
+iframe {
+  width: 100%;
+  height: 500px;
+}
+#details {
+  background: white;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+}

@@ -1,0 +1,90 @@
+@font-face {
+  font-family: "icon";
+  src: url(flUhRq6tzZclQEJ-Vdg-IuiaDsNcIhQ8tQ.woff2);
+}
+.icon {
+  font-family: icon;
+  font-size: 2em;
+  font-style: normal;
+}
+button {
+  text-align: center;
+  outline: none;
+  border: none;
+  transition: all 200ms;
+  margin: 3px;
+  user-select: none;
+}
+button.press {
+  padding: 5px 10px;
+  box-shadow: 0px 0px 2px inset black;
+}
+button.press:active {
+  box-shadow: 0px 0px 10px inset;
+}
+button.press.noCorner {
+  border-radius: 5px;
+}
+button.press.light {
+  background: white;
+  border: 2px solid white;
+}
+button.press.light:active {
+  box-shadow: 0px 0px 10px inset;
+}
+button.press.dark {
+  color: white;
+  background: #595959;
+  border: 2px solid #595959;
+}
+button.press.dark:active {
+  box-shadow: 0px 0px 10px inset black;
+}
+button.press.green {
+  background: #59A546;
+  border: 2px solid #59A546;
+}
+button.round {
+  border-radius: 50px;
+}
+button.ellipse {
+  width: 60px;
+  height: 50px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  box-shadow: 0px 1px 0px #D7D7D7,
+  0px 2px 0px #D7D7D7,
+  0px 3px 0px #D7D7D7,
+  0px 4px 0px #D7D7D7,
+  0px 5px 0px #D7D7D7,
+  0px 6px 0px #D7D7D7,
+  0px 7px 0px #D7D7D7;
+}
+button.ellipse:active {
+  background: #DEDEDE;
+  margin-top: 10px;
+  box-shadow: 0px 1px 0px #A8A8A8,
+  0px 2px 0px #A8A8A8,
+  0px 3px 0px #A8A8A8,
+  0px 4px 0px #A8A8A8,
+  0px 5px 0px #A8A8A8
+}
+button.ellipse.dark {
+  background: #595959;
+  color: white;
+  box-shadow: 0px 1px 0px #303030,
+  0px 2px 0px #303030,
+  0px 3px 0px #303030,
+  0px 4px 0px #303030,
+  0px 5px 0px #303030,
+  0px 6px 0px #303030,
+  0px 7px 0px #303030;
+}
+button.ellipse.dark:active {
+  background: #303030;
+  box-shadow: 0px 1px 0px black,
+  0px 2px 0px black,
+  0px 3px 0px black,
+  0px 4px 0px black,
+  0px 5px 0px black;
+}
